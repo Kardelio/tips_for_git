@@ -1,0 +1,67 @@
+--------- Git Tips ---------
+
+alias g='git'
+alias gs='git status'
+alias ga'git add .'
+
+git add - i
+		= Interactive git adding
+
+git reset --hard
+		= whip back to last commit (delete files)
+
+git stash save "_message_"
+		= save stash with message
+
+git stash list
+		= view all stashes
+
+git stash clear
+		= clear all stashes
+
+git checkout HEAD^
+		= get previous commit active
+
+git fetch -p
+		= prune all dead remote branches in your remotes
+
+git checkout -- data/file.java
+		= checkout version of file before changes u saved (HEAD^)
+
+git diff HEAD^ HEAD file_name.txt
+		= compare a file against older version
+
+git commit --amend -m "New commit message"
+		= change last commit message
+
+git add filenew
+git commit --amend --no-edit
+		= add file to last commit
+
+git checkout -
+		= quickly change to previous branch
+
+git checkout -b new_branch
+		=create new branch and checkout
+OR ===
+git branch abc
+git checkout !:2
+		= make a branch and checkout to it
+
+git whatchanged --since='2 weeks ago'
+		= what changed since 2 weeks ago
+
+git rev-list --count HEAD
+		=get total number of commits on that branch
+
+git status --ignored
+		=status with all ignored file
+
+git blame file_name
+		=find out who dun it
+
+git tag -a v1.0 -m "simple tag messsage"
+		=tag a commit
+
+git show v1.0
+		=show a commit that belongs to a tag
